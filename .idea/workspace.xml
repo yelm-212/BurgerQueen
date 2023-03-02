@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2343aae6-07b2-4fea-82b1-de69c6a2a2ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BurgerQueen.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/OrderApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/product/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/product/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/product/subproduct/BurgerSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/product/subproduct/Drink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/product/subproduct/Hamburger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/product/subproduct/Side.java" afterDir="false" />
-    </list>
+    <list default="true" id="2343aae6-07b2-4fea-82b1-de69c6a2a2ee" name="Changes" comment="menu" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +48,14 @@
       <option name="presentableId" value="Default" />
       <updated>1677718272355</updated>
     </task>
+    <task id="LOCAL-00001" summary="menu">
+      <created>1677725431851</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677725431851</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -77,5 +68,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu" />
   </component>
 </project>
