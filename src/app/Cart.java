@@ -21,7 +21,7 @@ public class Cart {
         this.menu = menu;
     }
 
-    private int calculateTotalPrice(){
+    int calculateTotalPrice(){
         int total = 0;
         for (Product product: items)
             total += product.getPrice();
@@ -34,20 +34,22 @@ public class Cart {
 
         String sideId = scanner.nextLine();
         Side side = (Side) productRepository.findById(Integer.parseInt(sideId));
-        chooseOption(side);
+        Side newside = new Side(side);
+        chooseOption(newside);
 
         System.out.println("음료를 골라주세요.");
         menu.printDrinks(false);
 
         String drinkId = scanner.nextLine();
         Drink drink = (Drink) productRepository.findById(Integer.parseInt(drinkId));
-        chooseOption(drink);
+        Drink newdrink = new Drink(drink);
+        chooseOption(newdrink);
 
         String name = hamburger.getName() + "세트";
         int price = hamburger.getBurgerSetPrice();
         int kcal = hamburger.getKcal() + side.getKcal() + drink.getKcal();
 
-        return new BurgerSet(name, price, kcal, hamburger, side, drink);
+        return new BurgerSet(name, price, kcal, hamburger, newside, newdrink);
     }
 
     public void addToCart(int productId){
@@ -59,10 +61,19 @@ public class Cart {
             if (hamburger.isBurgerSet())
                 product = composeSet(hamburger);
         }
+        Product newproduct;
+        if (product instanceof Hamburger)
+            newproduct = new Hamburger((Hamburger) product);
+        else if (product instanceof  Side)
+            newproduct = new Side((Side) product);
+        else if (product instanceof  Drink)
+            newproduct = new Drink((Drink) product);
+        else
+            newproduct = product;
 
         Product[] newItems = new Product[items.length + 1];
         System.arraycopy(items, 0, newItems, 0, items.length);
-        newItems[newItems.length - 1] = product;
+        newItems[newItems.length - 1] = newproduct;
         items = newItems;
 
         System.out.printf("[📣] %s를(을) 장바구니에 담았습니다.\n", product.getName());
@@ -106,7 +117,7 @@ public class Cart {
         scanner.nextLine();
     }
 
-    private void printCartDetails(){
+    void printCartDetails(){
         for (Product product: items) {
             if (product instanceof BurgerSet) {
                 BurgerSet burgerSet = (BurgerSet) product; // 다운캐스팅
