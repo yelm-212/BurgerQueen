@@ -4,23 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2343aae6-07b2-4fea-82b1-de69c6a2a2ee" name="Changes" comment="Cart.java">
-      <change afterPath="$PROJECT_DIR$/src/app/AppConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/discount/Discount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/discount/discountCondition/CozDiscountCondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/discount/discountCondition/DiscountCondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/discount/discountCondition/KidDiscountCondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/discount/discountPolicy/DiscountPolicy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/discount/discountPolicy/FixedAmountDiscountPolicy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/discount/discountPolicy/FixedRateDiscountPolicy.java" afterDir="false" />
+    <list default="true" id="2343aae6-07b2-4fea-82b1-de69c6a2a2ee" name="Changes" comment="Singleton pattern화">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/AppConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/AppConfigurer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/OrderApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/OrderApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/product/subproduct/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/product/subproduct/Drink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/product/subproduct/Hamburger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/product/subproduct/Hamburger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/product/subproduct/Side.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/product/subproduct/Side.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/discount/Discount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/discount/Discount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/product/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/product/ProductRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677737484494</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Singleton pattern화">
+      <created>1677823404655</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677823404655</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +105,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="menu" />
     <MESSAGE value="Cart.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cart.java" />
+    <MESSAGE value="Singleton pattern화" />
+    <option name="LAST_COMMIT_MESSAGE" value="Singleton pattern화" />
   </component>
 </project>

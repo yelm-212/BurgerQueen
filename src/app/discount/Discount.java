@@ -2,10 +2,12 @@ package app.discount;
 
 import app.discount.discountCondition.DiscountCondition;
 
-public class Discount {
-    private DiscountCondition[] discountConditions;
+import java.util.ArrayList;
 
-    public Discount(DiscountCondition[] discountConditions) {
+public class Discount {
+    private ArrayList<DiscountCondition> discountConditions;
+
+    public Discount(ArrayList<DiscountCondition> discountConditions) {
         this.discountConditions = discountConditions;
     }
 

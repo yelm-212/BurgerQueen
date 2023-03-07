@@ -5,10 +5,12 @@ import app.product.subproduct.Drink;
 import app.product.subproduct.Hamburger;
 import app.product.subproduct.Side;
 
-public class Menu {
-    private Product[] products;
+import java.util.ArrayList;
 
-    public Menu(Product[] products) {
+public class Menu {
+    private ArrayList<Product> products;
+
+    public Menu(ArrayList<Product> products) {
         this.products = products;
     }
 

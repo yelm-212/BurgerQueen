@@ -54,7 +54,7 @@ public class OrderApp {
                 int menuNumber = Integer.parseInt(input);
 
                 if (menuNumber == 0) cart.printCart();
-                else if (1 <= menuNumber && menuNumber <= productRepository.getAllProducts().length)
+                else if (1 <= menuNumber && menuNumber <= productRepository.getAllProducts().size())
                     cart.addToCart(menuNumber);
 
             }

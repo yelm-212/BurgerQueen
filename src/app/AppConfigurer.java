@@ -8,6 +8,9 @@ import app.discount.discountPolicy.FixedAmountDiscountPolicy;
 import app.discount.discountPolicy.FixedRateDiscountPolicy;
 import app.product.ProductRepository;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class AppConfigurer {
     //  프로그램의 동작에 필요한 모든 객체들을 생성해주는 역할
     //  객체의 동작에 필요한 다른 객체들을 결정해주는 역할도 수행
@@ -27,10 +30,11 @@ public class AppConfigurer {
 
     public Discount discount() {
         return new Discount(
-                new DiscountCondition[]{
+                new ArrayList<DiscountCondition>(Arrays.asList(
                         new CozDiscountCondition(new FixedRateDiscountPolicy(10)),
                         new KidDiscountCondition(new FixedAmountDiscountPolicy(500))
-                });
+                ))
+        );
     }
 
     public Order order() {

@@ -7,10 +7,12 @@ import app.discount.discountCondition.KidDiscountCondition;
 import app.discount.discountPolicy.FixedAmountDiscountPolicy;
 import app.discount.discountPolicy.FixedRateDiscountPolicy;
 
+import java.util.ArrayList;
+
 public class Order {
     private Cart cart;
 
-    private DiscountCondition[] discountConditions;
+    private ArrayList<DiscountCondition> discountConditions;
 
     private Discount discount;
 
@@ -19,7 +21,7 @@ public class Order {
         this.discount = discount;
     }
 
-    public Order(Cart cart, DiscountCondition[] discountConditions) {
+    public Order(Cart cart, ArrayList<DiscountCondition> discountConditions) {
         this.cart = cart;
         this.discountConditions = discountConditions;
     }

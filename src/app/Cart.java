@@ -7,10 +7,11 @@ import app.product.subproduct.Drink;
 import app.product.subproduct.Hamburger;
 import app.product.subproduct.Side;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Cart {
-    private Product[] items = new Product[] {};
+    private ArrayList<Product> items = new ArrayList<>();
     private Scanner scanner = new Scanner(System.in);
     
     private ProductRepository productRepository;
@@ -71,10 +72,13 @@ public class Cart {
         else
             newproduct = product;
 
-        Product[] newItems = new Product[items.length + 1];
-        System.arraycopy(items, 0, newItems, 0, items.length);
-        newItems[newItems.length - 1] = newproduct;
-        items = newItems;
+//        Product[] newItems = new Product[items.length + 1];
+//        System.arraycopy(items, 0, newItems, 0, items.length);
+//        newItems[newItems.length - 1] = newproduct;
+//        items = newItems;
+
+        items.add(newproduct);
+
 
         System.out.printf("[📣] %s를(을) 장바구니에 담았습니다.\n", product.getName());
     }
